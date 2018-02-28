@@ -1,51 +1,46 @@
-var hari = 31;
-var bulan = 8;
-var tahun = 2200;
+var hari = 28;
+var bulan = 2;
+var tahun = 2018;
 
-  switch (true) {
-        case ((hari>=1 && hari <=31) && bulan === 1 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Januari " + tahun);
+  switch (bulan) {
+        case 1:
+            bulan = "Januari";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 2 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Februari " + tahun);
+        case 2:
+            bulan = "Februari";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 3 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Maret " + tahun);
+        case 3:
+            bulan = "Maret";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 4 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " April " + tahun);
+        case 4:
+            bulan = "April";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 5 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Mei " + tahun);
+        case 5:
+            bulan = "Mei";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 6 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Juni " + tahun);
+        case 6:
+            bulan = "Juni";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 7 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Juli " + tahun);
+        case 7:
+            bulan = "Juli";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 8 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Agustus " + tahun);
+        case 8:
+            bulan = "Agustus";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 9 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " September " + tahun);
+        case 9:
+            bulan = "September";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 10 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Oktober " + tahun);
+        case 10:
+            bulan = "Oktober";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 11 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " November " + tahun);
+        case 11:
+            bulan = "November";
             break;
-        case ((hari>=1 && hari <=31) && bulan === 12 && (tahun>=1900 && tahun <=2200)):
-            console.log(hari+ " Desember " + tahun);
-            break;
-        case (hari<1 || hari>31):
-            console.log("assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)");
-            break;
-        case (tahun<1900 || tahun>2200):
-            console.log("assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)");
+        case 12:
+            bulan = "Desember";
             break;
         default:
-            console.log("assign nilai variabel bulan disini! (dengan angka antara 1 - 12)");
+            bulan = "Bulan hanya sampai 1-12 (Januari hingga Desember)";
             break;
     }
+console.log(hari+" "+bulan+" "+tahun);
